@@ -1,14 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suryakumar M | Portfolio</title>
+  <style>
+    :root {
+      --bg: #fafbfc;
+      --fg: #171a1f;
+      --accent: #2a60c6;
+      --border: #e3e7eb;
+      --muted: #666;
+      --section-gap: 40px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 820px;
+      margin: 32px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px 0 rgba(22,32,48,0.03);
+      padding: 36px 24px 24px 24px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      margin-bottom: var(--section-gap);
+      padding-bottom: 18px;
+    }
+    .name {
+      font-size: 2.2rem;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      color: var(--fg);
+    }
+    .contact {
+      margin: 12px 0 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .section {
+      margin-bottom: var(--section-gap);
+    }
+    .section h2 {
+      font-size: 1.3rem;
+      letter-spacing: 0.01em;
+      margin: 0 0 8px 0;
+      color: var(--accent);
+      font-weight: 700;
+      border-left: 4px solid var(--accent);
+      padding-left: 8px;
+    }
+    ul, ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .two-col {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+    .col {
+      flex: 1 1 260px;
+      min-width: 230px;
+    }
+    .item-title {
+      font-weight: bold;
+      margin: 8px 0 2px 0;
+      color: var(--fg);
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 0.97em;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 12px; }
+      header { padding-bottom: 8px; }
+      .name { font-size: 1.35rem; }
+      .two-col { flex-direction: column; gap: 12px; }
+    }
+  </style>
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
+  <div class="container">
+    <header>
+      <div class="name">SURYAKUMAR M</div>
+      <div class="contact">
+        <span>📞 +91-6385373726</span>
+        <span>✉️ <a href="mailto:suryask206@gmail.com">suryask206@gmail.com</a></span>
+        <span>🔗 <a href="https://linkedin.com/in/suryakumar-m-891335246" target="_blank">LinkedIn</a></span>
+        <span>🏠 No.5, Jeevanagar 4th cross street, Kalanivasal new road, Karaikudi, Sivagangai, 630002</span>
+      </div>
+    </header>
+    <section class="section">
+      <h2>Objective</h2>
+      <div>Passionate and motivated fresher seeking a developer position to utilize my skills in front-end and back-end development to contribute to innovative projects and enhance my expertise in the field.</div>
+    </section>
+    <section class="section two-col">
+      <div class="col">
+        <h2>Education</h2>
+        <div class="item-title">B.E., in Computer Science and Engineering</div>
+        <div class="muted">Shanmuganathan Engineering College (2019 – 2023)</div>
+        <div>CGPA: 8.32</div>
+        <div class="item-title">HSC</div>
+        <div class="muted">Alagappa matric Hr. Sec. School (2018-2019)</div>
+        <div>Aggregate: 78%</div>
+        <div class="item-title">SSLC</div>
+        <div class="muted">SMSV Hr. Sec. School (2017-2018)</div>
+        <div>Aggregate: 93%</div>
+      </div>
+      <div class="col">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Python programming (GUVI)</li>
+          <li>Introduction to Data Science (Simplilearn)</li>
+          <li>Deep Learning & AI (Pantech e-learn)</li>
+          <li>AI for India 2.0 (GUVI, Skill India Digital)</li>
+        </ul>
+      </div>
+    </section>
 
+    <section class="section two-col">
+      <div class="col">
+        <h2>Skills</h2>
+        <div class="item-title">Technical Skills</div>
+        <ul>
+          <li><b>Programming Languages:</b> C, C++, Python</li>
+          <li><b>Database:</b> SQL</li>
+          <li><b>Web-Technologies:</b> HTML, CSS, JavaScript</li>
+        </ul>
+        <div class="item-title">Soft Skills</div>
+        <ul>
+          <li>Strong analytical and problem-solving skills</li>
+          <li>Effective Communication and Collaboration</li>
+          <li>Detail-oriented and multitasking</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Relevant Coursework</h2>
+        <ul>
+          <li>Completed Python Programming in Besant Technologies</li>
+          <li>Pursuing Python Full Stack Development in Qspiders</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <div class="col">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Participated in an AWS Workshop at Shanmuganathan Engineering College</li>
+          <li>Completed Python Essentials (Cisco Networking Academy)</li>
+          <li>Completed Microsoft Learn AI Skills Challenge (Aug 2023)</li>
+          <li>Participated Power BI Workshop (Jobaaj Learnings)</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Projects</h2>
+        <ul>
+          <li><b>Safe and Secure Driver Drowsiness Recognition System</b> (Feb 2023 - May 2023)</li>
+          <li><b>Smart Waste Management System for Metropolitan Cities</b> (Aug 2022 - Nov 2022)</li>
+          <li><b>Food Wastage Reduction Management</b> (Mar 2022 - May 2022)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="item-title">Process Associate</div>
+      <div class="muted">24/7 Digitize Pvt Ltd (Jan 2024 – Present)</div>
+      <ul>
+        <li>Managed and streamlined tasks for real estate data, property listings, client records, and transactions.</li>
+        <li>Demonstrated efficiency in handling large datasets, maintaining confidentiality, and supporting operational workflows since January 2024.</li>
+      </ul>
+    </section>
+  </div>
+</body>
 </html>
